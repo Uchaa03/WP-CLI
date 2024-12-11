@@ -116,4 +116,4 @@ wp core check-update
 wp core update
 ````
 
-Y con esto ya estaría todo configurado
+Y con esto ya estaría todo configurado, importante habilitar el dominio elegido en `hosts`.

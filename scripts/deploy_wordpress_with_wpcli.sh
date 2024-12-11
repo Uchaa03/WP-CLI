@@ -48,21 +48,4 @@ sudo wp core install \
   --path=/var/www/html \
   --allow-root
 
-# Cambiar el propietario de los archivos al usuario www-data
-echo "Cambiando el propietario del directorio a www-data..."
-sudo chown -R www-data:www-data /var/www/html
-
-# Actualización de plugins y temas
-echo "Actualizando plugins y temas de WordPress..."
-sudo wp plugin update --all --path=/var/www/html --allow-root
-sudo wp theme update --all --path=/var/www/html --allow-root
-
-# Comprobando actualizaciones del core de WordPress
-echo "Comprobando actualizaciones del core de WordPress..."
-sudo wp core check-update --path=/var/www/html --allow-root
-
-# Actualizando el core de WordPress a la última versión
-echo "Actualizando WordPress..."
-sudo wp core update --path=/var/www/html --allow-root
-
 echo "Instalación de WordPress completa."
